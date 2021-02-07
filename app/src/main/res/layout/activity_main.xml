@@ -15,34 +15,68 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="User name"
-        android:layout_marginTop="50dp"/>
+        android:layout_marginTop="30dp"/>
     <EditText
         android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Password"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:layout_below="@+id/username"/>
     <EditText
         android:id="@+id/repassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Retype password"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:layout_below="@+id/password"/>
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:entries="@array/Spinner_items"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/repassword"/>
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:entries="@array/Spinner_items1"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/spinner"/>
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ckb"
+        android:textSize="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/spinner1"/>
+    <CheckBox
+        android:id="@+id/checkbox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ckb1"
+        android:textSize="15dp"
+        android:layout_below="@+id/checkbox"/>
     <Button
         android:id="@+id/btnsignup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Register"
-        android:layout_marginTop="50dp"
-        android:layout_below="@+id/repassword"/>
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/checkbox1"/>
     <Button
         android:id="@+id/btnsignin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Existing user! Go to sign in page!"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:layout_below="@+id/btnsignup"/>
 
 </RelativeLayout>
+

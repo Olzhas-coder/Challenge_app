@@ -4,16 +4,23 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Message;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
 
     EditText username, password, repassword;
     Button signup, signin;
     DBHelper DB;
+    CheckBox ckb, ckb1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +31,14 @@ public class MainActivity extends AppCompatActivity {
         signup = (Button) findViewById(R.id.btnsignup);
         signin = (Button) findViewById(R.id.btnsignin);
         DB = new DBHelper(this);
+        ckb = findViewById(R.id.checkbox);
+        ckb1 = findViewById(R.id.checkbox1);
+
+        Spinner spinner=findViewById(R.id.spinner);
+        spinner.setOnItemSelectedListener(this);
+
+        Spinner spinner1=findViewById(R.id.spinner1);
+        spinner1.setOnItemSelectedListener(this);
 
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
                         Toast.makeText(MainActivity.this, "Password not matching", Toast.LENGTH_SHORT).show();
                     }
                 }
-            }
+            }   
         });
         signin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,4 +81,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    public void onItemSelected(AdapterView<?> adapterView, View view, int position, long id) {
+        Toast.makeText(this, adapterView.getSelectedItem().toString(), Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> parent) {
+
+    }
 }
+
+
