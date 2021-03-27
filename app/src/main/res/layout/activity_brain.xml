@@ -5,19 +5,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity">
+    tools:context=".About">
 
-    <ImageView
-        android:id="@+id/welcome_img"
-        android:layout_width="wrap_content"
-        android:layout_height="70dp"
-        app:srcCompat="@drawable/challenge_photo"
-        android:contentDescription="TODO"/>
-
-    <androidx.recyclerview.widget.RecyclerView
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/welcome_img"/>
+        android:text="About"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
@@ -31,4 +27,3 @@
         />
 
 </RelativeLayout>
-

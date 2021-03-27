@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/body"
+        android:title="Body"
+        android:icon="@drawable/ic_body"/>
+    <item
+        android:id="@+id/brain"
+        android:title="Brain"
+        android:icon="@drawable/ic_brain"/>
+    <item
+        android:id="@+id/spirit"
+        android:title="Spirit"
+        android:icon="@drawable/ic_spirit"/>
+
+</menu>

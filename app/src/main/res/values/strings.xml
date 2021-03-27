@@ -1,19 +1,19 @@
 <resources>
     <string name="app_name">RegistrationActivity</string>
     <string-array name="Spinner_items">
-        <item>MIT</item>
-        <item>Cambridge</item>
-        <item>Oxford</item>
-        <item>Harvard</item>
+        <item>JIHC</item>
+        <item>KTL(boys)</item>
+        <item>KTL(girls)</item>
+        <item>Alkyz</item>
     </string-array>
     <string-array name="Spinner_items1">
-        <item>201</item>
-        <item>202</item>
-        <item>203</item>
-        <item>204</item>
+        <item>Taraz</item>
+        <item>Almaty</item>
+        <item>Shymkent</item>
+        <item>Aktobe</item>
     </string-array>
-    <string name="ckb">I live in city</string>
-    <string name="ckb1">I live in village</string>
+    <string name="ckb">Personal computer</string>
+    <string name="ckb1">Internet</string>
 
 
 </resources>
